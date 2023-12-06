@@ -8,6 +8,7 @@ export function makeAzurePath(
 
   // should add api-key to query string
   // path += `${path.includes("?") ? "&" : "?"}api-version=${apiVersion}`;
+  // 默认gpt-35-turbo
   model = model ?? "gpt-35-turbo";
   path = `/openai/deployments/${model}/chat/completions?api-version=${apiVersion}`;
 
